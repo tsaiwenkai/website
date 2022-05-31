@@ -1,0 +1,26 @@
+﻿h1.st1 {
+    color: mediumpurple;
+    text-decoration: underline
+}
+
+.st2 {
+    color: bisque;
+    font-style: italic
+}
+
+.col {
+    color: grey
+}
+
+.size {
+    font-size: xx-large
+}
+
+.txt {
+    text-decoration: underline
+}
+
+p{
+    color:darkviolet;
+    text-decoration:underline
+}

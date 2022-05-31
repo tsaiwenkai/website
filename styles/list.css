@@ -1,0 +1,25 @@
+﻿.list {
+    list-style-type: circle;
+    border-radius:0px 30px 0 30px;
+    border-width:20px;
+    border-style:ridge;
+    border-color:burlywood;
+    /*border-top-left-radius:50px*/
+    
+
+}
+
+.list1 {
+    list-style-image: url(../image/123.png)
+}
+
+.in {
+    background-color: gray;
+    list-style-position: inside
+}
+
+.out {
+    background-color: bisque;
+    list-style-position: outside
+}
+
