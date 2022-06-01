@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            src: url(font/JustOldFashion.ttf);
+            font-family: justfashion;
+        }
+
+        .st {
+            width: 450px;
+            border-bottom-style: solid;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .sub {
+            width: 450px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .t1 {
+            width: 100px;
+            float: left;
+            text-align: right;
+        }
+
+        fieldset {
+            width: 500px;
+            margin: 15px;
+            border: 1px solid #32b79b;
+            border-radius: 20px;
+        }
+
+        em {
+            color: red;
+        }
+
+        .font {
+            font-family: 'Merriweather', serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <legend>基本資料<em>(重要)</em></legend>
+            <div class="st">
+                <label for="account1" class="font"> 姓名:</label>
+                <input type="text" id="account1" name="account" value="guest" size="10" autocomplete="on" />
+            </div>
+            <div class="st">
+                <label class="t1">性別:</label>
+                <label>
+                    <input type="radio" name="gender" value="male" required />男
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female" />女
+                </label>
+            </div>
+            <div class="st">
+                <label for="pwd1" class="t1">密碼: </label><input type="password" id="pwd1" name="pwd" maxlength="8" />
+            </div>
+            <div class="st">
+                <label for="ID1" class="t1">身分證號: </label><input type="text" id="ID1" name="ID" maxlength="10" pattern="[a-z,A-Z]{1}[1-2,8-9]{1}\d{8}" />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>介紹</legend>
+            <div class="st">
+                <label class="t1">興趣:</label>
+                <label>
+                    <input type="checkbox" name="hobby" value="music" />音樂
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="soprt" />運動
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="movie" />電影
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="travel" />旅遊
+                </label>
+            </div>
+            <div class="st">
+                <label class="t1">縣市:</label>
+                <select name="add1">
+                    <!--複選 multiple-->
+                    <option value="Tpe">台北市</option>
+                    <option value="Ntp" selected>新北市</option>
+                    <option value="Tac">台中市</option>
+                </select>
+            </div>
+            <div class="st">
+                <label for="adress1" class="t1"> 地址:</label>
+                <input type="text" id="adress1" name="adress" size="20" />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>其他</legend>
+            <div class="st">
+                <label class="t1">照片: </label>
+                <input type="file" name="file" />
+            </div>
+            <div class="st">
+                <label for="comment1" class="t1">意見:</label><textarea id="comment1" name="comment" cols="30" row"5"></textarea>
+            </div>
+            <div class="st">
+                <label class="t1">blog</label>
+                <input type="url" name="hplist" list="urllist" />
+                <datalist id="urllist">
+                    <option value="http://www.google.com">google</option>
+                    <option value="http://www.yahoo.com.tw"></option>
+                    <option value="http://www.pchome.com.tw">
+                </datalist>
+            </div>
+            <div class="sub">
+                <input type="submit" value="送出" />
+                <input type="reset" value="清除" />        <!--enable為開啟-->
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
